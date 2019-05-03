@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordRepetition;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace WordRepetitionTests
 {
@@ -47,10 +48,9 @@ namespace WordRepetitionTests
         }
 
         [TestMethod]
-        public void FindRepetition_StringWithRepetition_RepetitionSet()
+        public void FindRepetition_ThreeRepetitions_FindRepetitionSet()
         {
             var testString = "abababab";
-            var expectedResult = new HashSet<string>();
 
             var result = _bruteForceFinder.FindRepetition(testString);
 

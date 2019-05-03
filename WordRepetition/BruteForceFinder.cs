@@ -30,8 +30,8 @@ namespace WordRepetition
                         if (IsRepetition(input, pointerA, pointerB))
                         {
 
-                            var repitition = input.Substring(pointerA, length);
-                            result.Add(repitition);
+                            var repeatition = input.Substring(pointerA, length);
+                            result.Add(repeatition);
                         }
                         pointerB += length;
                     }
