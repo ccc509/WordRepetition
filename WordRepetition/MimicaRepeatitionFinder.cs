@@ -23,10 +23,10 @@ namespace WordRepetition
         public HashSet<string> FindRepeatitionOfChar(string input, List<int> indexes)
         {
             var result = new HashSet<string>();
-            var i = 0;
-            while(i <= i + (indexes.Count - i)/2 )
+            for (var i = 0; i< indexes.Count - 1; i++)
             {
-                for (var j = i + 1; j < indexes.Count; j++)
+                var j = i + 1;
+                while(j <= i + (indexes.Count - i)/2 )
                 {
                     if (IsRepetition(input, indexes[i], indexes[j]))
                     {
@@ -34,15 +34,10 @@ namespace WordRepetition
                         var repeatition = input.Substring(indexes[i], length);
                         result.Add(repeatition);
                     }
+                    j++;
                 }
-                i++;
             }
             return result;
-        }
-
-        private bool ShouldBeCompared(List<int> indexes, int i, int j)
-        {
-            return indexes[indexes.Count - 1] - indexes[j] >= indexes[j - 1] - indexes[i];
         }
 
         public Dictionary<char, List<int>> CreateCharIndexLookUp(string input)
