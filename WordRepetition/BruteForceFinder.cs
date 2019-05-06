@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WordRepetition
 {
-    public class BruteForceFinder : IWordRepeatitionFinder
+    public class BruteForceFinder : IWordRepetitionFinder
     {
         public HashSet<string> FindRepetition(String input)
         {

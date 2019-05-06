@@ -7,12 +7,12 @@ namespace WordRepetitionTests
     [TestClass]
     public class MimicaRepeatitionFinderTests
     {
-        private MimicaRepeatitionFinder _finder;
+        private MimicaRepetitionFinder _finder;
 
         [TestInitialize]
         public void SetUp()
         {
-            _finder = new MimicaRepeatitionFinder();
+            _finder = new MimicaRepetitionFinder();
         }
 
         [TestMethod]

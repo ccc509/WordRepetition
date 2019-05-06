@@ -10,11 +10,11 @@ namespace WordRepetitionTests
         [TestMethod]
         public void TwoAlgorithmsProduceSameResult()
         {
-            IWordRepeatitionFinder finder;
+            IWordRepetitionFinder finder;
             var testString = "ababcddsdfegrefgrefgrefgrefgxdfertgh";
             finder = new BruteForceFinder();
             var bruteForceResult = finder.FindRepetition(testString);
-            finder = new MimicaRepeatitionFinder();
+            finder = new MimicaRepetitionFinder();
             var mimicaResult = finder.FindRepetition(testString);
 
             Assert.AreEqual(bruteForceResult.Count, mimicaResult.Count);

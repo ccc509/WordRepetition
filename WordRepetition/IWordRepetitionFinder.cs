@@ -2,7 +2,7 @@
 
 namespace WordRepetition
 {
-    public interface IWordRepeatitionFinder
+    public interface IWordRepetitionFinder
     {
         HashSet<string> FindRepetition(string input);
     }

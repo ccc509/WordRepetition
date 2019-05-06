@@ -45,8 +45,8 @@
   <ItemGroup>
     <Compile Include="BruteForceFinder.cs" />
     <Compile Include="FileReader.cs" />
-    <Compile Include="IWordRepeatitionFinder.cs" />
-    <Compile Include="MimicaRepeatitionFinder.cs" />
+    <Compile Include="IWordRepetitionFinder.cs" />
+    <Compile Include="MimicaRepetitionFinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
